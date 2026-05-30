@@ -1,4 +1,7 @@
-# CrAmki
+# CrAmki  
+![Status](https://img.shields.io/badge/status-prototype-orange)
+
+
 Cramki is a tool that helps me convert my reviewers into Anki flashcard faster because im lazy and got no time 
 
 # What Does It Do?
@@ -9,4 +12,5 @@ by the time I finish making a flashcard, im already tired TT
 Am using fastApi for this as well and a few py libs; ankigen, json, etc.
 
 You can probably try it here: https://cramki.onrender.com
+
 (note that if its inactive it will have to deploy for a few mins first)
