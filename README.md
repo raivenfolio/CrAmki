@@ -7,3 +7,6 @@ this is just to automate how I study using gemini as I use it mainly for generat
 by the time I finish making a flashcard, im already tired TT 
 
 Am using fastApi for this as well and a few py libs; ankigen, json, etc.
+
+You can probably try it here: https://cramki.onrender.com
+(note that if its inactive it will have to deploy for a few mins first)
