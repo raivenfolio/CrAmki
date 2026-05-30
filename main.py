@@ -52,6 +52,7 @@ def create_anki_deck(quesNansw, output_fileName="CrAmki_deck.apkg"):
     ]
     
     #model for my temp
+    #everything inside the template is from the ANki Eco website where i used their html and css style
     mc_model = genanki.Model(
         model_id,
         'CrAmki MCQ ikkz',
