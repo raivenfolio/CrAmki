@@ -18,7 +18,7 @@ You can probably try it here: https://cramki.onrender.com
 # roadmap and fixes
 - [] have to fix better viewing for mobile in case i have to quickly make apkg files when im outside
 - [] finetune the prompt for better result of questions
-- [] increase chunks for question generation
-- [] change ui and fix front end code
+- :heavy_check_mark: increase chunks for question generation
+- :heavy_check_mark: change ui and fix front end code
 - [] ability customize amount of question for apgk file
 - [] ability to do multi-file upload, maybe?
