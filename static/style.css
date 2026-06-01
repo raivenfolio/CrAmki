@@ -49,7 +49,7 @@ form {
 input[type="file"] {
     background-color: #1e1e24;
     padding: 20px;
-    border: 2px dashed #6c63ff; /* dash line na thingy*/
+    border: 2px dashed #6c63ff;
     border-radius: 8px;
     color: #a0a0b0;
     cursor: pointer;
