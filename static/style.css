@@ -38,6 +38,24 @@ body {
     font-weight: 600;
 }
 
+.resultText{
+    position: fixed;
+    bottom: 250px; 
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 50;
+
+}
+
+.resultText h3 {
+    font-size: 15px;
+    margin-top: 30px;
+    color: #ffffff;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
 /* Form Layout */
 form {
     display: flex;

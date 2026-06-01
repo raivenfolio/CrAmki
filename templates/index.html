@@ -9,6 +9,12 @@
     <link href="{{ url_for('static', path='style.css') }}" rel="stylesheet">
 </head>
 <body>
+     <div class="resultText"> 
+        
+    <h3>Please wait for a moment while it process chunks! It will download automatically once it finishes!</h3>
+
+    </div>
+    
     <div class="mainContainer">
         <h2>Upload PDF or files here to generate the Anki Cards</h2>
         <form action="/upload-pdf/" enctype="multipart/form-data" method="post">
@@ -16,5 +22,7 @@
             <input type="submit" value="Generate Cards">
         </form>
     </div>
+
+
 </body>
 </html>
