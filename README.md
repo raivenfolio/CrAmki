@@ -1,4 +1,7 @@
-# CrAmki
+# CrAmki  
+![Status](https://img.shields.io/badge/status-prototype-orange)
+
+
 Cramki is a tool that helps me convert my reviewers into Anki flashcard faster because im lazy and got no time 
 
 # What Does It Do?
@@ -7,3 +10,15 @@ this is just to automate how I study using gemini as I use it mainly for generat
 by the time I finish making a flashcard, im already tired TT 
 
 Am using fastApi for this as well and a few py libs; ankigen, json, etc.
+
+You can probably try it here: https://cramki.onrender.com
+
+(note that if its inactive it will have to deploy for a few mins first)
+
+# roadmap and fixes
+- [] have to fix better viewing for mobile in case i have to quickly make apkg files when im outside
+- [] finetune the prompt for better result of questions
+- [] increase chunks for question generation
+- [] change ui and fix front end code
+- [] ability customize amount of question for apgk file
+- [] ability to do multi-file upload, maybe?
