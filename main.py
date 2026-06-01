@@ -154,11 +154,14 @@ def gen_flashcard(text_chunks):
     
     #setting up some prompt
     prompt = f"""
-    Read the following textbook or modules or files section and generate 7 to 10 highly relevant multiple-choice questions based on the key concepts in this specific section or slide. The multiple choice question
-    in total should be 55 questions.
-    You must return a JSON list of objects. Each object must contain exactly these keys: 
-    "question", "option_a", "option_b", "option_c", "option_d", and "correct_answer".
-    
+    Read the following textbook or modules or files section and generate 7 to 10 highly relevant multiple-choice questions based on the key concepts in this specific section or slide.
+    ou are an expert academic tutor. Analyze the following text and generate EXACTLY 50 distinct, high-quality flashcard questions and answers for Anki. 
+    Strict Rules:
+    1. You must output exactly 50 question-and-answer pairs. Do not output 49, do not output 51. Count them before returning the final response.
+    2. Ensure every question is unique and covers a different detail, concept, or definition from the text.
+    3. You must return a JSON list of objects. Each object must contain exactly these keys: 
+        "question", "option_a", "option_b", "option_c", "option_d", and "correct_answer".
+        
     CRITICAL INSTRUCTION: For the "correct_answer" key, you must ONLY return the uppercase letter A, B, C, or D corresponding to the correct option. Do NOT return numbers.
     
     Text section: {text_chunks}
@@ -198,7 +201,7 @@ async def upload_pdf(file: UploadFile = File(...)):
     doc.close()
     
     #chuncking because the thing crashes if its reading alot of text
-    chunk_size = 8000
+    chunk_size = 3000
     all_gen_cards = []
     
     text_chunks = [get_content[i:i+chunk_size] for i in range(0, len(get_content), chunk_size)]
